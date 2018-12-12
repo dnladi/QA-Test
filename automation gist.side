@@ -1,0 +1,700 @@
+{
+  "id": "b7a5c995-679c-4334-a76b-7135cce49a67",
+  "version": "1.1",
+  "name": "automation gist",
+  "url": "https://gist.github.com/dnladi",
+  "tests": [{
+    "id": "74f90522-07cd-4be0-91c3-0ab98586bce9",
+    "name": "create public test",
+    "commands": [{
+      "id": "ca6461c9-0757-447c-8755-07cb4c3bb328",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6dec69a3-2fd9-4d7c-9fc8-813625000c9d",
+      "comment": "",
+      "command": "click",
+      "target": "name=gist[description]",
+      "targets": [
+        ["name=gist[description]", "name"],
+        ["css=input[name=\"gist[description]\"]", "css"],
+        ["css=.input-block", "css:finder"],
+        ["xpath=//input[@name='gist[description]']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6b60c35c-2a14-4924-9d54-aa57aaeed873",
+      "comment": "",
+      "command": "type",
+      "target": "name=gist[description]",
+      "targets": [
+        ["name=gist[description]", "name"],
+        ["css=input[name=\"gist[description]\"]", "css"],
+        ["css=.input-block", "css:finder"],
+        ["xpath=//input[@name='gist[description]']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "example"
+    }, {
+      "id": "9ee2d4de-c5b1-412b-bc7c-2e1742df030e",
+      "comment": "",
+      "command": "click",
+      "target": "name=gist[contents][][name]",
+      "targets": [
+        ["name=gist[contents][][name]", "name"],
+        ["css=input[name=\"gist[contents][][name]\"]", "css"],
+        ["css=.filename", "css:finder"],
+        ["xpath=//input[@name='gist[contents][][name]']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdddb1f1-012f-470c-bb2b-f9054e98e814",
+      "comment": "",
+      "command": "type",
+      "target": "name=gist[contents][][name]",
+      "targets": [
+        ["name=gist[contents][][name]", "name"],
+        ["css=input[name=\"gist[contents][][name]\"]", "css"],
+        ["css=.filename", "css:finder"],
+        ["xpath=//input[@name='gist[contents][][name]']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": "create public gist"
+    }, {
+      "id": "764c2179-bfab-4937-86f2-7f768eaee74d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.CodeMirror-line",
+      "targets": [
+        ["css=.CodeMirror-line", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div/div[2]/div/div[5]/div/div/div/div/div[5]/div/pre", "xpath:idRelative"],
+        ["xpath=//pre", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "304eb6be-a414-4075-8b02-650598953f75",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.CodeMirror-scroll",
+      "targets": [
+        ["css=div.CodeMirror-scroll", "css"],
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div/div[2]/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div/div[5]", "xpath:position"]
+      ],
+      "value": "new Promise((resolve, reject) => {\\n  setTimeout(() => {\\n    resolve('result')\\n  }, 100)\\n})\\n  .then(console.log)\\n  .catch(console.error)"
+    }, {
+      "id": "6a35c6bc-276f-41a2-b5d0-4691dc9677b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=div:nth-child(1) > .CodeMirror-line > span",
+      "targets": [
+        ["css=div:nth-child(1) > .CodeMirror-line > span", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div/div[2]/div/div[5]/div/div/div/div/div[5]/div/pre/span", "xpath:idRelative"],
+        ["xpath=//pre/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c3036e7-a64a-42d8-ab9b-ba01d5e530fc",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=div.CodeMirror-code",
+      "targets": [
+        ["css=div.CodeMirror-code", "css"],
+        ["css=.CodeMirror-code", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div/div[2]/div/div[5]/div/div/div/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": "<div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">1</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">new Promise((resolve, reject) =&gt; {</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">2</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  setTimeout(() =&gt; {</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">3</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">    resolve('result')</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">4</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  }, 100)</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">5</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">})</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">6</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  .then(console.log)</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">7</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  .catch(console.error)</span></pre></div>"
+    }, {
+      "id": "1de4fef5-8d44-4d7d-b7fb-552e8130b2a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=indent-mode",
+      "targets": [
+        ["id=indent-mode", "id"],
+        ["css=#indent-mode", "css"],
+        ["css=#indent-mode", "css:finder"],
+        ["xpath=//select[@id='indent-mode']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62eba994-4188-4308-adea-4702d90a12d5",
+      "comment": "",
+      "command": "select",
+      "target": "id=indent-mode",
+      "targets": [],
+      "value": "label=Tabs"
+    }, {
+      "id": "88700ab6-f620-4f53-bb1b-db7fa5038a71",
+      "comment": "",
+      "command": "click",
+      "target": "id=indent-mode",
+      "targets": [
+        ["id=indent-mode", "id"],
+        ["css=#indent-mode", "css"],
+        ["css=#indent-mode", "css:finder"],
+        ["xpath=//select[@id='indent-mode']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a55c90c2-0a44-4514-9c35-39b41e112abd",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.CodeMirror-scroll",
+      "targets": [
+        ["css=div.CodeMirror-scroll", "css"],
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div/div[2]/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div/div[5]", "xpath:position"]
+      ],
+      "value": "\tnew Promise((resolve, reject) => {\\n  setTimeout(() => {\\n    resolve('result')\\n  }, 100)\\n})\\n  .then(console.log)\\n  .catch(console.error)"
+    }, {
+      "id": "a18f017d-9597-49b9-9329-a26c55c85b24",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=.CodeMirror-code",
+      "targets": [
+        ["css=div.CodeMirror-code", "css"],
+        ["css=.CodeMirror-code", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div/div[2]/div/div[5]/div/div/div/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": "<div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">1</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\"><span class=\"cm-tab\" role=\"presentation\" cm-text=\"\t\">        </span>new Promise((resolve, reject) =&gt; {</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">2</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  setTimeout(() =&gt; {</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">3</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">    resolve('result')</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">4</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  }, 100)</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">5</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">})</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">6</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  .then(console.log)</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">7</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  .catch(console.error)</span></pre></div>"
+    }, {
+      "id": "7b2e076e-c57f-4105-bede-9006b1c72828",
+      "comment": "",
+      "command": "click",
+      "target": "id=indent-mode",
+      "targets": [
+        ["id=indent-mode", "id"],
+        ["css=#indent-mode", "css"],
+        ["css=#indent-mode", "css:finder"],
+        ["xpath=//select[@id='indent-mode']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02b3b4ee-1228-4b4d-973a-63097d78c5e9",
+      "comment": "",
+      "command": "select",
+      "target": "id=indent-mode",
+      "targets": [],
+      "value": "label=Spaces"
+    }, {
+      "id": "8c5b09fd-2837-4e43-ba54-6cc3da1de22f",
+      "comment": "",
+      "command": "click",
+      "target": "id=indent-mode",
+      "targets": [
+        ["id=indent-mode", "id"],
+        ["css=#indent-mode", "css"],
+        ["css=#indent-mode", "css:finder"],
+        ["xpath=//select[@id='indent-mode']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b30c631-7042-4904-b740-db1622963a6b",
+      "comment": "",
+      "command": "click",
+      "target": "id=indent-size",
+      "targets": [
+        ["id=indent-size", "id"],
+        ["css=#indent-size", "css"],
+        ["css=#indent-size", "css:finder"],
+        ["xpath=//select[@id='indent-size']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div[2]/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5febf698-7afc-4b2e-bfc1-e07dbfeeec34",
+      "comment": "",
+      "command": "//select",
+      "target": "id=indent-size",
+      "targets": [],
+      "value": "label=4"
+    }, {
+      "id": "d42d3c48-4acd-45ae-8d83-cf9b3b41ab8f",
+      "comment": "",
+      "command": "click",
+      "target": "id=indent-size",
+      "targets": [
+        ["id=indent-size", "id"],
+        ["css=#indent-size", "css"],
+        ["css=#indent-size", "css:finder"],
+        ["xpath=//select[@id='indent-size']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div[2]/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f58f8726-7acc-4cc8-b6cb-e779a4fd5675",
+      "comment": "",
+      "command": "click",
+      "target": "id=line-wrap-mode",
+      "targets": [
+        ["id=line-wrap-mode", "id"],
+        ["css=#line-wrap-mode", "css"],
+        ["css=#line-wrap-mode", "css:finder"],
+        ["xpath=//select[@id='line-wrap-mode']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div[2]/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "898c449e-3d8f-4903-9f03-495b5ab65be0",
+      "comment": "",
+      "command": "//select",
+      "target": "id=line-wrap-mode",
+      "targets": [],
+      "value": "label=Soft wrap"
+    }, {
+      "id": "88229844-8942-44ea-9f31-93726166abea",
+      "comment": "",
+      "command": "click",
+      "target": "id=line-wrap-mode",
+      "targets": [
+        ["id=line-wrap-mode", "id"],
+        ["css=#line-wrap-mode", "css"],
+        ["css=#line-wrap-mode", "css:finder"],
+        ["xpath=//select[@id='line-wrap-mode']", "xpath:attributes"],
+        ["xpath=//div[@id='gists']/div[2]/div/div/div[2]/select[3]", "xpath:idRelative"],
+        ["xpath=//select[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f732ca1-9deb-4103-8f3b-9e81e7d0e6b5",
+      "comment": "",
+      "command": "click",
+      "target": "name=gist[public]",
+      "targets": [
+        ["name=gist[public]", "name"],
+        ["css=button[name=\"gist[public]\"]", "css"],
+        ["css=.js-gist-create:nth-child(1)", "css:finder"],
+        ["xpath=//button[@name='gist[public]']", "xpath:attributes"],
+        ["xpath=//form[@id='new_gist']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "888d0061-43aa-46a2-a1d1-aebda177e07d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "c13ac881-cd21-40a9-b570-d43747dae935",
+    "name": "list gist",
+    "commands": [{
+      "id": "04edfe07-fe21-414e-986a-9a15caf9d747",
+      "comment": "",
+      "command": "open",
+      "target": "https://gist.github.com/dnladi",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d8e0649-4edc-4d5a-a5de-2c95d8e25627",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .btn",
+      "targets": [
+        ["css=li:nth-child(2) .btn", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[2]/div/details/summary", "xpath:idRelative"],
+        ["xpath=//div/details/summary", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "291a0199-6530-4762-aaf6-2984a1d90a5c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Least recently created",
+      "targets": [
+        ["linkText=Least recently created", "linkText"],
+        ["css=li:nth-child(2) .select-menu-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[2]/div/details/details-menu/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://gist.github.com/dnladi?direction=asc&sort=created')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fd2540c-fcc9-4ac9-b1f7-b8538267f166",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .btn",
+      "targets": [
+        ["css=li:nth-child(2) .btn", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[2]/div/details/summary", "xpath:idRelative"],
+        ["xpath=//div/details/summary", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "219f76ff-6895-490d-9632-09a96dde4c7a",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .select-menu-item:nth-child(3) > .select-menu-item-text",
+      "targets": [
+        ["css=li:nth-child(2) .select-menu-item:nth-child(3) > .select-menu-item-text", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[2]/div/details/details-menu/div[2]/a[3]/span", "xpath:idRelative"],
+        ["xpath=//a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad79ce59-4e34-499e-8dc4-67aefa8e0318",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .btn > span",
+      "targets": [
+        ["css=li:nth-child(2) .btn > span", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[2]/div/details/summary/span", "xpath:idRelative"],
+        ["xpath=//div/details/summary/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a92b9981-0606-47b1-896c-b34265d0821b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.select-menu-item:nth-child(4) > .select-menu-item-text",
+      "targets": [
+        ["css=.select-menu-item:nth-child(4) > .select-menu-item-text", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[2]/div/details/details-menu/div[2]/a[4]/span", "xpath:idRelative"],
+        ["xpath=//a[4]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6bb32a1e-b350-4d63-bf40-7b87a455a23d",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) i",
+      "targets": [
+        ["css=li:nth-child(3) i", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[3]/div/details/summary/i", "xpath:idRelative"],
+        ["xpath=//li[3]/div/details/summary/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a358e7e-d1e3-4b62-b29a-78373e293d43",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Public only",
+      "targets": [
+        ["linkText=Public only", "linkText"],
+        ["css=.js-selected-navigation-item:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[3]/div/details/details-menu/div[2]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dnladi/public')]", "xpath:href"],
+        ["xpath=//li[3]/div/details/details-menu/div[2]/a[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a72d021-680b-4c7f-9192-8431f4331778",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .btn > span",
+      "targets": [
+        ["css=li:nth-child(2) .btn > span", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[2]/div/details/summary/span", "xpath:idRelative"],
+        ["xpath=//div/details/summary/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a9e5799-34f9-4f76-8e19-5b8e8b56b5fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(2) .select-menu-item:nth-child(2) > .select-menu-item-text",
+      "targets": [
+        ["css=li:nth-child(2) .select-menu-item:nth-child(2) > .select-menu-item-text", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[2]/div/details/details-menu/div[2]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7adbc786-22dc-443f-84c0-9356992c2151",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(3) .btn",
+      "targets": [
+        ["css=li:nth-child(3) .btn", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[3]/div/details/summary", "xpath:idRelative"],
+        ["xpath=//li[3]/div/details/summary", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86d50c7e-6990-43ce-881a-569f178b560c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.js-selected-navigation-item:nth-child(3) > .select-menu-item-text",
+      "targets": [
+        ["css=.js-selected-navigation-item:nth-child(3) > .select-menu-item-text", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[3]/div/details/details-menu/div[2]/a[3]/span", "xpath:idRelative"],
+        ["xpath=//li[3]/div/details/details-menu/div[2]/a[3]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "180ac9ff-de3b-43c1-ac9a-3db17b9513d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "89ec5082-2557-46af-af81-03599eb9f33a",
+    "name": "edit gist",
+    "commands": [{
+      "id": "7747c369-4328-414d-a7ca-3c41e5d7180c",
+      "comment": "",
+      "command": "open",
+      "target": "https://gist.github.com/dnladi",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86a4b76c-d012-496c-a61c-0429e6fe56b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View create public test",
+      "targets": [
+        ["linkText=View create public test", "linkText"],
+        ["css=.gist-snippet:nth-child(3) .link-overlay", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div[2]/div/div[3]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://gist.github.com/dnladi/cca989ff52674e4a9008df668da37c6a')]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e59c8fcf-abe7-4093-8a80-be04728b59de",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Edit",
+      "targets": [
+        ["linkText=Edit", "linkText"],
+        ["css=a.btn.btn-sm", "css"],
+        ["css=li > .btn", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dnladi/cca989ff52674e4a9008df668da37c6a/edit')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd6bda2c-480a-49c6-9c74-509ebb9c5931",
+      "comment": "",
+      "command": "click",
+      "target": "css=div.CodeMirror-lines",
+      "targets": [
+        ["css=div.CodeMirror-lines", "css"],
+        ["css=.CodeMirror-lines", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div[2]/div[2]/div/div[5]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c7d3a75-bb8c-47a9-b3b8-ce9e31e26fa2",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.CodeMirror-scroll",
+      "targets": [
+        ["css=div.CodeMirror-scroll", "css"],
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div[2]/div[2]/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div/div[5]", "xpath:position"]
+      ],
+      "value": "  new Promise((resolve, reject) => {\\n  setTimeout(() => {\\n    resolve('result')\\n  }, 100)\\n})\\n  .then(console.log)\\n  .catch(console.error)\\n  "
+    }, {
+      "id": "db48dcf8-dc58-4cc0-b4ad-2ea20a374660",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.CodeMirror-scroll",
+      "targets": [
+        ["css=div.CodeMirror-scroll", "css"],
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div[2]/div[2]/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div/div[5]", "xpath:position"]
+      ],
+      "value": "  new Promise((resolve, reject) => {\\n  setTimeout(() => {\\n    resolve('result')\\n  }, 100)\\n})\\n  .then(console.log)\\n  .catch(console.error)\\n  "
+    }, {
+      "id": "bbd739b8-7cf9-42b8-87fa-bfa18c824ae4",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.CodeMirror-scroll",
+      "targets": [
+        ["css=div.CodeMirror-scroll", "css"],
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div[2]/div[2]/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div/div[5]", "xpath:position"]
+      ],
+      "value": "  new Promise((resolve, reject) => {\\n  setTimeout(() => {\\n    resolve('result')\\n  }, 100)\\n})\\n  .then(console.log)\\n  .catch(console.error)\\n  c"
+    }, {
+      "id": "2a6a3e98-9c95-433c-8c24-743d809fc54b",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.CodeMirror-scroll",
+      "targets": [
+        ["css=div.CodeMirror-scroll", "css"],
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div[2]/div[2]/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div/div[5]", "xpath:position"]
+      ],
+      "value": "  new Promise((resolve, reject) => {\\n  setTimeout(() => {\\n    resolve('result')\\n  }, 100)\\n})\\n  .then(console.log)\\n  .catch(console.error)\\n  cl"
+    }, {
+      "id": "e64b6312-6f60-435d-bc33-f74350e1b5dc",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.CodeMirror-scroll",
+      "targets": [
+        ["css=div.CodeMirror-scroll", "css"],
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div[2]/div[2]/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div/div[5]", "xpath:position"]
+      ],
+      "value": "  new Promise((resolve, reject) => {\\n  setTimeout(() => {\\n    resolve('result')\\n  }, 100)\\n})\\n  .then(console.log)\\n  .catch(console.error)\\n  clo"
+    }, {
+      "id": "daeb3b36-0750-4060-b507-72b0aafd98f8",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.CodeMirror-scroll",
+      "targets": [
+        ["css=div.CodeMirror-scroll", "css"],
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div[2]/div[2]/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div/div[5]", "xpath:position"]
+      ],
+      "value": "  new Promise((resolve, reject) => {\\n  setTimeout(() => {\\n    resolve('result')\\n  }, 100)\\n})\\n  .then(console.log)\\n  .catch(console.error)\\n  clos"
+    }, {
+      "id": "c59d0975-7844-4be6-bce0-5ebd7072e90a",
+      "comment": "",
+      "command": "type",
+      "target": "css=div.CodeMirror-scroll",
+      "targets": [
+        ["css=div.CodeMirror-scroll", "css"],
+        ["css=.CodeMirror-scroll", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div[2]/div[2]/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div/div[5]", "xpath:position"]
+      ],
+      "value": "  new Promise((resolve, reject) => {\\n  setTimeout(() => {\\n    resolve('result')\\n  }, 100)\\n})\\n  .then(console.log)\\n  .catch(console.error)\\n  close"
+    }, {
+      "id": "3bea9d2a-e36a-479a-9fdc-ba79233026e8",
+      "comment": "",
+      "command": "editContent",
+      "target": "css=div.CodeMirror-code",
+      "targets": [
+        ["css=div.CodeMirror-code", "css"],
+        ["css=.CodeMirror-code", "css:finder"],
+        ["xpath=//div[@id='gists']/div[2]/div[2]/div[2]/div/div[5]/div/div/div/div/div[5]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div[5]", "xpath:position"]
+      ],
+      "value": "<div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">1</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  new Promise((resolve, reject) =&gt; {</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">2</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  setTimeout(() =&gt; {</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">3</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">    resolve('result')</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">4</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  }, 100)</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">5</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">})</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">6</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  .then(console.log)</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">7</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  .catch(console.error)</span></pre></div><div style=\"position: relative;\"><div class=\"CodeMirror-gutter-wrapper\" contenteditable=\"false\" style=\"left: -53px;\"><div class=\"CodeMirror-linenumber CodeMirror-gutter-elt\" style=\"left: 0px; width: 21px;\">8</div></div><pre class=\" CodeMirror-line \" role=\"presentation\"><span role=\"presentation\" style=\"padding-right: 0.1px;\">  close</span></pre></div>"
+    }, {
+      "id": "b607904b-391f-4fef-a794-83219fa555d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=button.btn.btn-primary",
+      "targets": [
+        ["css=button.btn.btn-primary", "css"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='edit_gist_93528884']/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ccd7311-592c-46f5-a7c4-8030e1116a55",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4a942420-d7dd-4755-b74d-7f2b126010d5",
+    "name": "delete gist",
+    "commands": [{
+      "id": "b9c32f9a-418f-4e7c-8ead-bc1488445ba4",
+      "comment": "",
+      "command": "open",
+      "target": "https://gist.github.com/dnladi",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac04a5e9-0d7a-4834-b80c-ff286ae9a9d6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View create public test",
+      "targets": [
+        ["linkText=View create public test", "linkText"],
+        ["css=a.link-overlay", "css"],
+        ["css=.gist-snippet:nth-child(1) .link-overlay", "css:finder"],
+        ["xpath=//div[@id='gist-pjax-container']/div[2]/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://gist.github.com/dnladi/cca989ff52674e4a9008df668da37c6a')]", "xpath:href"],
+        ["xpath=//div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e259d73-f23b-4ec4-877e-79e31e49fa3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-danger",
+      "targets": [
+        ["css=.btn-danger", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='gist-pjax-container']/div/div/div/ul/li[2]/form/button", "xpath:idRelative"],
+        ["xpath=//li[2]/form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dce53269-7554-4fe0-a982-18aa89f0cbd8",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4a26c235-f4c6-47a9-bfa6-9b5bae3fc9f3",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Are you positive you want to delete this Gist?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "219b1147-0a08-4e28-8784-c2b0d1bfe8cf",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a93d8073-df14-440a-8a42-9c439f79a867",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1366x728",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2269d624-b6d7-42f6-8aba-81e42b6523d3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://gist.github.com/", "https://gist.github.com/dnladi"],
+  "plugins": []
+}
